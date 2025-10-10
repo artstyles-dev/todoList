@@ -12,7 +12,7 @@ interface TodoInputProps {
 }
 
 const TodoInput = ({ text, setText, todos, setTodos, completed, setCompleted }: TodoInputProps) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!text.trim()) {
       toast.error("Please enter a todo successfully!")
