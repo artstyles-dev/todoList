@@ -82,7 +82,7 @@ const TodoFull = () => {
     <main className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 flex justify-center">
       <div className="w-fit py-30 flex flex-col items-center">
         <h1 className="text-6xl font-bold mb-8 text-white md:text-8xl">
-          Just do it now!!
+          Just do it now!! TEST 
         </h1>
         {/* text */}
         <form
