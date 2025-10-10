@@ -36,7 +36,7 @@ const TodoFull = () => {
     localStorage.setItem("active", JSON.stringify(activeIndex));
   }, [activeIndex, todos]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!text.trim()) {
       toast.error("Please enter a todo list.");
